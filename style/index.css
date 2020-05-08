@@ -75,7 +75,10 @@ p {
     display: flex;
     align-items: baseline;
     width: 100%;
-    margin: 5% 0;
+}
+
+.navRow img {
+    margin-top: 5%;
 }
 
 h1 {
