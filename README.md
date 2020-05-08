@@ -35,14 +35,26 @@ Demonstrate your understanding of this week's concepts by answering the followin
 Edit this document to include your answers after each question. Make sure to leave a blank line above and below your answer so it is clear and easy to read by your project manager
 
 1. If you were to describe semantic HTML to the next cohort of students, what would you say?
+    They are HTML tags used to give meaning to your code. This way, any other person reading
+    your code would have an easier time knowing what the various content between those
+    tags are supposed to be on the web page.
 
 2. What are the 4 areas of the box model?
+    In order from furthest out to innermost:
+    Margins -- These are spacing on the outside of the box. Can position box around layout
+    Border -- The edge of the box itself. Can also have thickness and styles
+    Padding -- The spacing inside the box, outside the content.
+    Content -- The item itself being displayed (text, images, forms, etc)
 
 3. While using flexbox, what axis does the following property work on: ```align-items: center```?
+    "align-items" is the cross-axis of a flexbox. So if the flex-direction is row (default) or row-reverse, the align-items axis would be equivalent to the Y-axis on a Cartesian Plane. If flex-direction is column or column-reverse, then the align-items axis would be equivalent to th X-axis on the Cartesian Plane.
+    Specifically, "align-items: center;" would center the item(s) along that axis.
 
 4. Explain why git is valuable to a team of developers.
+    Git allows multiple developers to work on the same project together, even if they're located across long distances and save various versions of the project from each developer.
 
 5. Define mobile-first design in your own words.
+    "Mobile-first" dictates an initial layout design for screen sizes found on mobile devices, but allows for modifications of the layout for users that might use devices with larger screen sizes (so the layout doesn't appear tiny) up to a desktop screen.
 
 You are expected to be able to answer all these questions. Your responses contribute to your Sprint Challenge grade. Skipping this section *will* prevent you from passing this challenge.
 
