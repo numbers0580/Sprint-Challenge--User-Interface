@@ -74,36 +74,37 @@ p {
 .navRow {
     display: flex;
     align-items: baseline;
+    margin-top: 5%;
     width: 100%;
 }
 
-.navRow img {
+/* .navRow img {
     margin-top: 5%;
-}
+} */
 
 h1 {
     font-size: 2.0rem;
     font-weight: bold;
 }
 
-nav {
+.navLinks {
     display: flex;
     justify-content: space-around;
     align-items: flex-end;
     width: 100%;
 }
 
-nav a {
+.navLinks a {
     text-decoration: none;
     font-weight: bold;
     color: black;
 }
 
-nav a:visited {
+.navLinks a:visited {
     color: black;
 }
 
-nav a:hover {
+.navLinks a:hover {
     color: blue;
 }
 
@@ -229,11 +230,54 @@ footer nav a {
 
 
 @media(max-width: 800px) {
-    /*
-    */
+    .container {
+        width: 500px;
+    }
+
+    .navRow img {
+        width: 25px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    .nightlights {
+        width: 500px;
+    }
+
+    .middle-content .boxes div {
+        width: 20%;
+    }
 }
 
 @media(max-width: 500px) {
-    /*
-    */
+    .container {
+        width: 90%;
+    }
+
+    .navRow {
+        margin-top: 5%;
+    }
+
+    .navRow img {
+        width: 5%;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    .navLinks a {
+        font-size: 0.8rem;
+    }
+
+    .nightlights {
+        width: 100%;
+    }
+
+    .middle-content .boxes div {
+        width: 80px;
+        height: 80px;
+    }
 }
