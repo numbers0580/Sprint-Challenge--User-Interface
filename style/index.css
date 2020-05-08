@@ -78,6 +78,11 @@ p {
     width: 100%;
 }
 
+.navRow div {
+    display: flex;
+    align-items: baseline;
+}
+
 /* .navRow img {
     margin-top: 5%;
 } */
@@ -276,7 +281,7 @@ footer nav a {
 
 @media(max-width: 800px) {
     .container {
-        width: 500px;
+        width: 100%;
     }
 
     .navRow img {
@@ -287,33 +292,86 @@ footer nav a {
         font-size: 1.5rem;
     }
 
+    h2 {
+        font-size: 1.2rem;
+    }
+
     .nightlights {
-        width: 500px;
+        width: 100%;
+    }
+
+    .top-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-content .text-container {
+        width: 96%;
+    }
+
+    .middle-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .middle-title {
+        width: 100%;
+    }
+
+    .middle-content .boxes {
+        width: 300px;
     }
 
     .middle-content .boxes div {
-        width: 20%;
+        width: 100px;
+    }
+
+    .bottom-content {
+        flex-wrap: wrap;
+    }
+
+    .bottom-content .text-container {
+        width: 45%;
     }
 }
 
 @media(max-width: 500px) {
     .container {
-        width: 90%;
+        width: 100%;
     }
 
     .navRow {
         margin-top: 5%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navRow div {
+        width: 15%;
     }
 
     .navRow img {
-        width: 5%;
+        width: 33%;
     }
 
     h1 {
         font-size: 1rem;
     }
 
+    h2 {
+        font-size: 0.8rem;
+    }
+
+    .navLinks {
+        flex-direction: column;
+        justify-content: none;
+        align-items: center;
+    }
+
     .navLinks a {
+        padding: 1%;
         font-size: 0.8rem;
     }
 
@@ -321,8 +379,20 @@ footer nav a {
         width: 100%;
     }
 
+    .top-content .text-container {
+        width: 90%;
+    }
+
+    .middle-content .boxes {
+        width: 150px;
+    }
+
     .middle-content .boxes div {
-        width: 80px;
-        height: 80px;
+        width: 100px;
+        height: 100px;
+    }
+
+    .bottom-content .text-container {
+        width: 90%;
     }
 }
