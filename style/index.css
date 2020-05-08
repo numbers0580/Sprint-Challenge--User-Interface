@@ -71,6 +71,57 @@ p {
     margin: 0 auto;
 }
 
+.navRow {
+    display: flex;
+    align-items: baseline;
+    margin-top: 5%;
+    width: 100%;
+}
+
+.navRow div {
+    display: flex;
+    align-items: baseline;
+}
+
+/* .navRow img {
+    margin-top: 5%;
+} */
+
+h1 {
+    font-size: 2.0rem;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.navLinks {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    width: 100%;
+}
+
+.navLinks a {
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+.navLinks a:visited {
+    color: black;
+}
+
+.navLinks a:hover {
+    color: blue;
+}
+
+.nightlights {
+    margin: 5% 0;
+}
+
 .top-content {
     display: flex;
     flex-wrap: wrap;
@@ -101,7 +152,7 @@ p {
     justify-content: space-evenly;
 }
 
-.middle-content .boxes .box {
+.middle-content .boxes div {
     width: 12.5%;
     height: 100px;
     background: black;
@@ -110,6 +161,46 @@ p {
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+.middle-content .boxes .box1 {
+    background: teal;
+}
+
+.middle-content .boxes .box2 {
+    background: gold;
+}
+
+.middle-content .boxes .box3 {
+    background: cadetblue;
+}
+
+.middle-content .boxes .box4 {
+    background: coral;
+}
+
+.middle-content .boxes .box5 {
+    background: crimson;
+}
+
+.middle-content .boxes .box6 {
+    background: forestgreen;
+}
+
+.middle-content .boxes .box7 {
+    background: darkorchid;
+}
+
+.middle-content .boxes .box8 {
+    background: hotpink;
+}
+
+.middle-content .boxes .box9 {
+    background: indigo;
+}
+
+.middle-content .boxes .boxA {
+    background: dodgerblue;
 }
 
 .bottom-content {
@@ -124,6 +215,46 @@ p {
 
 .bottom-content .text-container:last-child {
     padding-right: 0;
+}
+
+.messageCenter {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.contactIcons {
+    width: 360px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.contactIcons img {
+    width: 30px;
+}
+
+form {
+    margin: 5% 0;
+}
+
+select {
+    margin: 1% 0;
+}
+
+textarea {
+    width: 360px;
+    height: 240px;
+    margin: 1% 0;
+}
+
+.theButtons {
+    width: 360px;
+    display: flex;
+    justify-content: space-between;
+}
+
+input {
+    margin: 1% 0;
 }
 
 footer {
@@ -143,4 +274,125 @@ footer nav {
 footer nav a {
     color: white;
     text-decoration: none;
+}
+
+
+
+
+@media(max-width: 800px) {
+    .container {
+        width: 100%;
+    }
+
+    .navRow img {
+        width: 25px;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    .nightlights {
+        width: 100%;
+    }
+
+    .top-content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .top-content .text-container {
+        width: 96%;
+    }
+
+    .middle-content {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .middle-title {
+        width: 100%;
+    }
+
+    .middle-content .boxes {
+        width: 300px;
+    }
+
+    .middle-content .boxes div {
+        width: 100px;
+    }
+
+    .bottom-content {
+        flex-wrap: wrap;
+    }
+
+    .bottom-content .text-container {
+        width: 45%;
+    }
+}
+
+@media(max-width: 500px) {
+    .container {
+        width: 100%;
+    }
+
+    .navRow {
+        margin-top: 5%;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navRow div {
+        width: 15%;
+    }
+
+    .navRow img {
+        width: 33%;
+    }
+
+    h1 {
+        font-size: 1rem;
+    }
+
+    h2 {
+        font-size: 0.8rem;
+    }
+
+    .navLinks {
+        flex-direction: column;
+        justify-content: none;
+        align-items: center;
+    }
+
+    .navLinks a {
+        padding: 1%;
+        font-size: 0.8rem;
+    }
+
+    .nightlights {
+        width: 100%;
+    }
+
+    .top-content .text-container {
+        width: 90%;
+    }
+
+    .middle-content .boxes {
+        width: 150px;
+    }
+
+    .middle-content .boxes div {
+        width: 100px;
+        height: 100px;
+    }
+
+    .bottom-content .text-container {
+        width: 90%;
+    }
 }
